@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <GridLayout
+        android:id="@+id/sudokuGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="9"
+        android:rowCount="9"
+        android:layout_gravity="center"
+        android:padding="4dp"
+        android:background="@drawable/grid_background">
+
+        <!-- 81 EditText elements for 9x9 grid will be programmatically added in MainActivity -->
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/validateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Validate"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:backgroundTint="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/solveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Solve"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:backgroundTint="@color/colorAccent" />
+
+    </LinearLayout>
+</LinearLayout>
